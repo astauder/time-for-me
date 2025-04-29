@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
               <img 
                 src="/lovable-uploads/bab09f2b-2d9c-4edd-a7da-69957efd3cc5.png" 
                 alt="Time for Me Logo" 
-                className="h-10 w-auto mr-2" 
+                className="h-12 w-auto mr-2" 
               />
             </Link>
           </div>
