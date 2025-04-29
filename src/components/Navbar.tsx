@@ -15,21 +15,21 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-sky-600">Time for Me</span>
+              <span className="text-2xl font-bold text-green-600">Time for Me</span>
             </Link>
           </div>
           
           <nav className="hidden md:ml-6 md:flex md:space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">
+            <Link to="/" className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">
               Home
             </Link>
-            <Link to="/practitioners" className="text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">
+            <Link to="/practitioners" className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">
               Practitioners
             </Link>
-            <Link to="/services" className="text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">
+            <Link to="/services" className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">
               Services
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">
+            <Link to="/about" className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">
               About
             </Link>
           </nav>
@@ -37,13 +37,13 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
           <div className="flex items-center space-x-4">
             {isLoggedIn ? (
               <>
-                <Link to="/appointments" className="text-gray-700 hover:text-sky-600">
+                <Link to="/appointments" className="text-gray-700 hover:text-green-600">
                   <Calendar className="h-5 w-5" />
                 </Link>
-                <Link to="/search" className="text-gray-700 hover:text-sky-600">
+                <Link to="/search" className="text-gray-700 hover:text-green-600">
                   <Search className="h-5 w-5" />
                 </Link>
-                <Link to="/profile" className="text-gray-700 hover:text-sky-600">
+                <Link to="/profile" className="text-gray-700 hover:text-green-600">
                   <User className="h-5 w-5" />
                 </Link>
               </>
@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
                   <Button variant="outline" className="text-sm">Log in</Button>
                 </Link>
                 <Link to="/signup">
-                  <Button className="bg-sky-600 hover:bg-sky-700 text-sm">Sign up</Button>
+                  <Button className="bg-green-600 hover:bg-green-700 text-sm">Sign up</Button>
                 </Link>
               </div>
             )}
