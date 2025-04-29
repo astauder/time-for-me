@@ -5,9 +5,14 @@ import AppointmentScheduler from '@/components/appointments/AppointmentScheduler
 
 const BookAppointment = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/30">
       <Navbar isLoggedIn={false} />
-      <AppointmentScheduler />
+      <div className="container mx-auto max-w-7xl px-4 py-12">
+        <h1 className="text-4xl font-bold mb-8">Book an Appointment</h1>
+        <div className="glass-card p-6">
+          <AppointmentScheduler />
+        </div>
+      </div>
     </div>
   );
 };
