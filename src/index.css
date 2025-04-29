@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 214 70% 16%; /* Navy blue from logo */
+    --primary: 260 84% 74%; /* Purple from logo */
     --primary-foreground: 0 0% 98%;
 
     --secondary: 187 52% 52%; /* Teal color from logo */
-    --secondary-foreground: 214 70% 16%;
+    --secondary-foreground: 260 34% 40%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 186 60% 50%; /* Light teal from logo */
+    --accent: 260 74% 75%; /* Light purple from logo */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 214 70% 16%;
+    --ring: 260 84% 74%;
 
     --radius: 1rem;
 
@@ -59,19 +59,19 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-purple-400 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-secondary hover:bg-secondary/80 text-navy-900 font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-teal-400 hover:bg-teal-500 text-purple-900 font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-outline {
-    @apply border border-primary text-primary hover:bg-primary hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
 
   .input-field {
-    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent;
   }
 
   .card {
@@ -95,6 +95,6 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-secondary/10 to-accent/20;
+    @apply bg-gradient-to-br from-purple-100 to-purple-200;
   }
 }

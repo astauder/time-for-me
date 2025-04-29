@@ -66,6 +66,19 @@ export default {
 					900: '#0a1e44', // Deep navy from logo
 					950: '#071537',
 				},
+				purple: {
+					50: '#f6f4fa',
+					100: '#eae5f4',
+					200: '#d5caea',
+					300: '#b7a6d9',
+					400: '#9b87f5', // Medium purple from logo
+					500: '#7E69AB', // Darker purple from logo
+					600: '#6E59A5',
+					700: '#5a498d',
+					800: '#463f69',
+					900: '#3c3655',
+					950: '#25213a',
+				},
 				teal: {
 					50: '#effbfb',
 					100: '#d7f4f5',
