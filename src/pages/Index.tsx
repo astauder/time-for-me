@@ -87,7 +87,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-6 text-lg">Resources</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mental Health Resources</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Health Resources</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Support</a></li>
               </ul>
