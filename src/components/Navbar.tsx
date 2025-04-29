@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -15,11 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/bab09f2b-2d9c-4edd-a7da-69957efd3cc5.png" 
-                alt="Time for Me Logo" 
-                className="h-12 w-auto mr-2" 
-              />
+              <span className="text-2xl font-bold text-secondary mr-2">Time for Me</span>
             </Link>
           </div>
           
