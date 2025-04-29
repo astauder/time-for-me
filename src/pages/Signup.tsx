@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30">
       <div className="max-w-md w-full glass-card p-8">
         <div className="text-center mb-10">
-          <Link to="/" className="text-4xl font-bold text-green-600">
+          <Link to="/" className="text-4xl font-bold text-primary">
             Time for Me
           </Link>
           <p className="mt-2 text-gray-600">Create an account to get started.</p>

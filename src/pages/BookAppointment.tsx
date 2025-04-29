@@ -5,10 +5,13 @@ import AppointmentScheduler from '@/components/appointments/AppointmentScheduler
 
 const BookAppointment = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/30">
       <Navbar isLoggedIn={false} />
-      <div className="container mx-auto px-4 py-6">
-        <AppointmentScheduler />
+      <div className="container mx-auto max-w-7xl px-4 py-12">
+        <h1 className="text-4xl font-bold mb-8">Book an Appointment</h1>
+        <div className="glass-card p-6">
+          <AppointmentScheduler />
+        </div>
       </div>
     </div>
   );

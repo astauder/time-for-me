@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,24 +14,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 142 76% 36%;
+    --primary: 246 83% 60%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
 
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 246 100% 77%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 142 76% 36%;
+    --ring: 246 83% 60%;
 
     --radius: 1rem;
 
@@ -59,7 +59,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-secondary {
@@ -67,11 +67,11 @@
   }
   
   .btn-outline {
-    @apply border border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply border border-primary text-primary hover:bg-primary hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
 
   .input-field {
-    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent;
+    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
   }
 
   .card {
@@ -95,30 +95,6 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-green-50 to-green-100;
-  }
-  
-  .progress-bar {
-    @apply bg-green-600 h-2;
-  }
-  
-  .date-tab {
-    @apply flex flex-col items-center justify-center p-4 border-b-2 border-transparent hover:border-green-600 transition-colors;
-  }
-  
-  .date-tab.active {
-    @apply border-green-600 font-medium;
-  }
-  
-  .time-slot {
-    @apply py-3 px-4 border border-gray-200 rounded-lg text-center hover:border-green-600 transition-colors;
-  }
-  
-  .time-slot.active {
-    @apply bg-green-600 text-white border-green-600;
-  }
-  
-  .next-button {
-    @apply bg-green-600 text-white py-2 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-green-700 transition-colors;
+    @apply bg-gradient-to-br from-primary/10 to-accent/20;
   }
 }

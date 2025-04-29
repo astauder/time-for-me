@@ -22,8 +22,8 @@ const appointments: Appointment[] = [
   {
     id: 'apt-1',
     practitionerId: '1',
-    practitionerName: 'Dr. Farzad Vasei',
-    practitionerTitle: 'General Practitioner, Male, FRACGP, MD',
+    practitionerName: 'Zane Soblusky',
+    practitionerTitle: 'Mental Health Counselor',
     practitionerImage: '/lovable-uploads/3b18ff63-26a6-4038-ba8b-c361e15ea4fb.png',
     clinic: 'Sky Therapy',
     date: new Date(2025, 4, 5), // May 5, 2025
@@ -33,7 +33,7 @@ const appointments: Appointment[] = [
   {
     id: 'apt-2',
     practitionerId: '2',
-    practitionerName: 'Dr. Sarah Johnson',
+    practitionerName: 'Sarah Johnson',
     practitionerTitle: 'Clinical Psychologist',
     practitionerImage: '/lovable-uploads/491cb860-4ba9-4d0e-be16-0c6e20b9dd2e.png',
     clinic: 'Mindful Psychology',
@@ -52,7 +52,7 @@ const AppointmentsList = () => {
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-gray-900">My Appointments</h1>
         <Link to="/practitioners">
-          <Button className="bg-green-600 hover:bg-green-700">
+          <Button className="bg-sky-600 hover:bg-sky-700">
             <Calendar className="mr-2 h-4 w-4" />
             Book New Appointment
           </Button>
@@ -79,7 +79,7 @@ const AppointmentsList = () => {
                         />
                         <div className="ml-4">
                           <h3 className="font-medium text-gray-900">{appointment.practitionerName}</h3>
-                          <p className="text-sm text-gray-500">{appointment.practitionerTitle}</p>
+                          <p className="text-sm text-gray-500">{appointment.practitionerTitle} at {appointment.clinic}</p>
                         </div>
                       </div>
                       <div className="flex flex-col items-end">
@@ -105,7 +105,7 @@ const AppointmentsList = () => {
             <div className="text-center py-12 bg-gray-50 rounded-lg">
               <p className="text-gray-500">No upcoming appointments</p>
               <Link to="/practitioners">
-                <Button variant="link" className="text-green-600">Book an appointment</Button>
+                <Button variant="link" className="text-sky-600">Book an appointment</Button>
               </Link>
             </div>
           )}
@@ -130,7 +130,7 @@ const AppointmentsList = () => {
                         />
                         <div className="ml-4">
                           <h3 className="font-medium text-gray-900">{appointment.practitionerName}</h3>
-                          <p className="text-sm text-gray-500">{appointment.practitionerTitle}</p>
+                          <p className="text-sm text-gray-500">{appointment.practitionerTitle} at {appointment.clinic}</p>
                         </div>
                       </div>
                       <div className="flex flex-col items-end">
@@ -145,7 +145,7 @@ const AppointmentsList = () => {
                       </div>
                     </div>
                     <div className="mt-4 flex justify-end">
-                      <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">Book Again</Button>
+                      <Button variant="outline">Book Again</Button>
                     </div>
                   </div>
                 </div>
