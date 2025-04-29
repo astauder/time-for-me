@@ -51,7 +51,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
             {specialties.map((specialty, index) => (
               <span 
                 key={index}
-                className="inline-flex text-xs bg-teal-100 text-teal-800 rounded px-2 py-1"
+                className="inline-flex text-xs bg-blue-100 text-blue-800 rounded px-2 py-1"
               >
                 {specialty}
               </span>
