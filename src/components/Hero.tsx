@@ -1,11 +1,18 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Calendar } from 'lucide-react';
+
 const Hero = () => {
   return <div className="relative bg-gradient-to-b from-teal-50 to-white">
       <div className="container mx-auto px-4 pt-12 pb-24 sm:px-6 lg:px-8 lg:pt-20 lg:pb-28 text-center">
         <div>
+          <img 
+            src="/lovable-uploads/26675dab-6abb-4fa6-8ba3-c9d076c6416a.png" 
+            alt="Time for Me Logo" 
+            className="mx-auto h-[110px] mb-6"
+          />
           <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-navy-900 sm:mt-5 sm:text-5xl lg:mt-6">
             <span className="block">Book your Health and Support</span>
             <span className="block text-teal-500">appointments online</span>
@@ -34,4 +41,5 @@ const Hero = () => {
       </div>
     </div>;
 };
+
 export default Hero;
