@@ -60,9 +60,9 @@ const Index = () => {
       
       <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-5xl text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Ready to prioritize your mental health?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Ready to prioritize your health?</h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Take the first step towards better mental wellbeing by booking an appointment with one of our experienced practitioners.
+            Take the first step towards better wellbeing by booking an appointment with one of our experienced practitioners.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 py-6 rounded-xl">Get Started Today</Button>
         </div>
