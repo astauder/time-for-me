@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,6 +64,19 @@ export default {
 					800: '#223764',
 					900: '#0a1e44', // Deep navy from logo
 					950: '#071537',
+				},
+				blue: {
+					50: '#eef7fc',
+					100: '#d5ebf8',
+					200: '#abdbf2',
+					300: '#81caea',
+					400: '#4db5eb', // Main brand color
+					500: '#269fe8',
+					600: '#1481cf',
+					700: '#0e66a8',
+					800: '#0c528a',
+					900: '#0a3d67',
+					950: '#072647',
 				},
 				purple: {
 					50: '#f6f4fa',

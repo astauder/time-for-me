@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 260 84% 74%; /* Purple from logo */
+    --primary: 199 82% 61%; /* Blue #4db5eb */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 187 52% 52%; /* Teal color from logo */
-    --secondary-foreground: 260 34% 40%;
+    --secondary: 199 82% 61%; /* Blue #4db5eb */
+    --secondary-foreground: 210 20% 25%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 260 74% 75%; /* Light purple from logo */
+    --accent: 199 82% 61%; /* Blue #4db5eb */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 260 84% 74%;
+    --ring: 199 82% 61%;
 
     --radius: 1rem;
 
@@ -59,19 +59,19 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-purple-400 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-teal-400 hover:bg-teal-500 text-purple-900 font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-outline {
-    @apply border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold py-2 px-4 rounded-xl transition-colors;
   }
 
   .input-field {
-    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent;
+    @apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent;
   }
 
   .card {
@@ -95,6 +95,6 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-purple-100 to-purple-200;
+    @apply bg-gradient-to-br from-blue-100 to-blue-200;
   }
 }
