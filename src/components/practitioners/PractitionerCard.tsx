@@ -35,7 +35,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
             className="w-16 h-16 rounded-full object-cover mr-4"
           />
           <div>
-            <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
+            <h3 className="text-lg font-semibold text-navy-900">{name}</h3>
             <p className="text-sm text-gray-600">{title}</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
             {specialties.map((specialty, index) => (
               <span 
                 key={index}
-                className="inline-flex text-xs bg-sky-100 text-sky-800 rounded px-2 py-1"
+                className="inline-flex text-xs bg-teal-100 text-teal-800 rounded px-2 py-1"
               >
                 {specialty}
               </span>
@@ -66,7 +66,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
           </div>
           
           <Link to={`/book/${id}`}>
-            <Button className="bg-sky-600 hover:bg-sky-700">
+            <Button className="bg-secondary hover:bg-secondary/80 text-navy-900">
               <Calendar className="mr-2 h-4 w-4" />
               Book
             </Button>

@@ -53,18 +53,31 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sky: {
-					50: '#f0f4ff',
-					100: '#e0eaff',
-					200: '#c7d7fe',
-					300: '#a4bbfd',
-					400: '#8194fb',
-					500: '#6271f6',
-					600: '#4f4dec',
-					700: '#4338ca',
-					800: '#3730a3',
-					900: '#312e81',
-					950: '#1e1b4b',
+				navy: {
+					50: '#f0f4fa',
+					100: '#dce6f4',
+					200: '#bccee9',
+					300: '#8fadda',
+					400: '#5d85c7',
+					500: '#3e67b0',
+					600: '#2c5094',
+					700: '#254078',
+					800: '#223764',
+					900: '#0a1e44', // Deep navy from logo
+					950: '#071537',
+				},
+				teal: {
+					50: '#effbfb',
+					100: '#d7f4f5',
+					200: '#b3eaec',
+					300: '#7edade',
+					400: '#43c1c7', // Medium teal from logo
+					500: '#27a4ab',
+					600: '#238590',
+					700: '#236b75',
+					800: '#225862',
+					900: '#214a52',
+					950: '#0f2c34',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

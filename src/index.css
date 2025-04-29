@@ -14,24 +14,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 246 83% 60%;
+    --primary: 214 70% 16%; /* Navy blue from logo */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 187 52% 52%; /* Teal color from logo */
+    --secondary-foreground: 214 70% 16%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 246 100% 77%;
+    --accent: 186 60% 50%; /* Light teal from logo */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 246 83% 60%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 70% 16%;
 
     --radius: 1rem;
 
@@ -63,7 +63,7 @@
   }
   
   .btn-secondary {
-    @apply bg-secondary hover:bg-secondary/80 text-gray-800 font-semibold py-2 px-4 rounded-xl transition-colors;
+    @apply bg-secondary hover:bg-secondary/80 text-navy-900 font-semibold py-2 px-4 rounded-xl transition-colors;
   }
   
   .btn-outline {
@@ -95,6 +95,6 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary/10 to-accent/20;
+    @apply bg-gradient-to-br from-secondary/10 to-accent/20;
   }
 }
