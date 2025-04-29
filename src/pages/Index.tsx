@@ -1,16 +1,12 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import PractitionersList from '@/components/practitioners/PractitionersList';
 import { Button } from '@/components/ui/button';
-
 const Index = () => {
   // In a real app, this would come from auth context
   const [isLoggedIn] = useState(false);
-  
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/30">
+  return <div className="min-h-screen bg-gradient-to-br from-background to-secondary/30">
       <Navbar isLoggedIn={isLoggedIn} />
       <Hero />
       
@@ -77,9 +73,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6">Time for Me</h3>
-              <p className="text-gray-400">
-                Making mental health care accessible and convenient.
-              </p>
+              <p className="text-gray-400">Making health care accessible and convenient.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
@@ -112,8 +106,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
