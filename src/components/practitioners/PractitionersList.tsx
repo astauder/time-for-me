@@ -9,7 +9,7 @@ const practitioners = [
     name: 'Zane Soblusky',
     title: 'Mental Health Counselor',
     specialties: ['Anxiety', 'Depression', 'Trauma'],
-    imageUrl: '/lovable-uploads/aad7b6bf-9226-41d6-8dd5-7fb2365a411d.png',
+    imageUrl: '/lovable-uploads/8fee77b4-5316-4d89-b8fc-8b4a58af3ef7.png',
     clinic: 'Sky Therapy',
     location: 'Brisbane, QLD',
     nextAvailable: 'Tomorrow, 10:00 AM',
