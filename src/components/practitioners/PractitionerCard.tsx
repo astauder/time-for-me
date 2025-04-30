@@ -32,7 +32,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
           <img
             src={imageUrl}
             alt={name}
-            className="w-16 h-16 rounded-full object-cover mr-4"
+            className="w-20 h-20 rounded-full object-cover mr-4 border-2 border-blue-400"
           />
           <div>
             <h3 className="text-lg font-semibold text-navy-900">{name}</h3>
