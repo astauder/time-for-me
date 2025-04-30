@@ -10,7 +10,7 @@ const Hero = () => {
         <div>
           <img alt="Time for Me Logo" className="mx-auto h-[110px] mb-6" src="/lovable-uploads/7e950228-2a60-42b4-928c-a6e6df1fbdcf.png" />
           <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-blue-700 sm:mt-5 sm:text-5xl lg:mt-6">
-            <span className="block">Book your Health and Support</span>
+            <span className="block">Nook your Health and Support</span>
             <span className="block text-blue-500">appointments online</span>
           </h1>
           <p className="mt-3 mx-auto max-w-2xl text-base text-gray-500 sm:mt-5 sm:text-lg">
