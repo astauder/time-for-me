@@ -41,7 +41,7 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
       <CardContent className="p-6">
         <div className="flex items-center">
           <Avatar className="w-20 h-20 rounded-full border-2 border-blue-400 mr-4">
-            {/* We won't attempt to load images and will use the fallback instead */}
+            <AvatarImage src={imageUrl} alt={name} />
             <AvatarFallback className="bg-blue-100 text-blue-800 text-xl">
               {getInitials(name)}
             </AvatarFallback>
