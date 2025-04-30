@@ -9,7 +9,7 @@ const practitioners = [
     name: 'Zane Soblusky',
     title: 'Mental Health Counselor',
     specialties: ['Anxiety', 'Depression', 'Trauma'],
-    imageUrl: '/lovable-uploads/3b18ff63-26a6-4038-ba8b-c361e15ea4fb.png',
+    imageUrl: '', // Empty string for image URL as we'll use initials
     clinic: 'Sky Therapy',
     location: 'Brisbane, QLD',
     nextAvailable: 'Tomorrow, 10:00 AM',
@@ -19,7 +19,7 @@ const practitioners = [
     name: 'Sarah Johnson',
     title: 'Clinical Psychologist',
     specialties: ['Relationship Issues', 'Stress Management', 'ADHD'],
-    imageUrl: '/lovable-uploads/491cb860-4ba9-4d0e-be16-0c6e20b9dd2e.png',
+    imageUrl: '', // Empty string for image URL
     clinic: 'Mindful Psychology',
     location: 'Brisbane, QLD',
     nextAvailable: 'Friday, 2:30 PM',
@@ -29,7 +29,7 @@ const practitioners = [
     name: 'Michael Chen',
     title: 'Psychotherapist',
     specialties: ['Grief', 'Life Transitions', 'Self-Esteem'],
-    imageUrl: '/lovable-uploads/de7c756e-4d57-43cd-9e32-d38bcdd14302.png',
+    imageUrl: '', // Empty string for image URL
     clinic: 'Harmony Mental Health',
     location: 'Gold Coast, QLD',
     nextAvailable: 'Monday, 11:15 AM',
