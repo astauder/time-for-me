@@ -3,6 +3,8 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 interface PractitionerCardProps {
   id: string;
@@ -25,15 +27,25 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
   location,
   nextAvailable,
 }) => {
+  // Extract initials for avatar fallback
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map((word) => word[0])
+      .join('')
+      .toUpperCase();
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
-      <div className="p-6">
+    <Card className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
+      <CardContent className="p-6">
         <div className="flex items-center">
-          <img
-            src={imageUrl}
-            alt={name}
-            className="w-16 h-16 rounded-full object-cover mr-4"
-          />
+          <Avatar className="w-20 h-20 rounded-full border-2 border-blue-400 mr-4">
+            {/* We won't attempt to load images and will use the fallback instead */}
+            <AvatarFallback className="bg-blue-100 text-blue-800 text-xl">
+              {getInitials(name)}
+            </AvatarFallback>
+          </Avatar>
           <div>
             <h3 className="text-lg font-semibold text-navy-900">{name}</h3>
             <p className="text-sm text-gray-600">{title}</p>
@@ -72,8 +84,8 @@ const PractitionerCard: React.FC<PractitionerCardProps> = ({
             </Button>
           </Link>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 };
 
